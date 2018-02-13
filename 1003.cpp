@@ -1,23 +1,23 @@
 //PAT 1003, 2018/2/12
 
 /*
-A supply chain is a network of retailers£¨ÁãÊÛÉÌ£©, distributors£¨¾­ÏúÉÌ£©, and suppliers£¨¹©Ó¦ÉÌ£©-- everyone involved in moving a product from supplier to customer.
+A supply chain is a network of retailersï¼ˆé›¶å”®å•†ï¼‰, distributorsï¼ˆç»é”€å•†ï¼‰, and suppliersï¼ˆä¾›åº”å•†ï¼‰-- everyone involved in moving a product from supplier to customer.
 
 Starting from one root supplier, everyone on the chain buys products from one's supplier in a price P and sell or distribute them in a price that is r% higher than P.
 It is assumed that each member in the supply chain has exactly one supplier except the root supplier, and there is no supply cycle.
 
 Now given a supply chain, you are supposed to tell the highest price we can expect from some retailers.
-ÊäÈëÃèÊö:
+è¾“å…¥æè¿°:
 Each input file contains one test case.  For each case, The first line contains three positive numbers: N (<=105), the total number of the members in the supply chain (and hence they are numbered from 0 to N-1); P, the price given by the root supplier; and r, the percentage rate of price increment for each distributor or retailer.  Then the next line contains N numbers, each number Si is the index of the supplier for the i-th member.  Sroot for the root supplier is defined to be -1.  All the numbers in a line are separated by a space.
 
 
-Êä³öÃèÊö:
+è¾“å‡ºæè¿°:
 For each test case, print in one line the highest price we can expect from some retailers, accurate up to 2 decimal places, and the number of retailers that sell at the highest price.  There must be one space between the two numbers.  It is guaranteed that the price will not exceed 1010.
-Ê¾Àı1
-ÊäÈë
+ç¤ºä¾‹1
+è¾“å…¥
 9 1.80 1.00
 1 5 4 4 -1 4 5 3 6
-Êä³ö
+è¾“å‡º
 1.85 2
 */
 
@@ -52,6 +52,7 @@ void recur(int i) {      //find longest route recursively
 	else {
 		temp_route++;
 		recur(mysup[i]);
+		return;
 	}
 }
 
