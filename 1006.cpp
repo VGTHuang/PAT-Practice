@@ -1,10 +1,10 @@
 //PAT 1006, 2018/2/14
 
 /*
-ÌâÄ¿ÃèÊö
+é¢˜ç›®æè¿°
 Zhejiang University has 6 campuses and a lot of gates.  From each gate we can collect the in/out times and the plate numbers of the cars crossing the gate.  Now with all the information available, you are supposed to tell, at any specific time point, the number of cars parking on campus, and at the end of the day find the cars that have parked for the longest time period.
 
-ÊäÈëÃèÊö:
+è¾“å…¥æè¿°:
 Each input file contains one test case.  Each case starts with two positive integers N (<= 10000), the number of records, and K (<= 80000) the number of queries.  Then N lines follow, each gives a record in the format
 plate_number hh:mm:ss status
 where plate_number is a string of 7 English capital letters or 1-digit numbers; hh:mm:ss represents the time point in a day by hour:minute:second, with the earliest time being 00:00:00 and the latest 23:59:59; and status is either in or out.
@@ -14,10 +14,10 @@ Note that all times will be within a single day. Each "in" record is paired with
 Then K lines of queries follow, each gives a time point in the format hh:mm:ss.  Note: the queries are given in ascending order of the times.
 
 
-Êä³öÃèÊö:
+è¾“å‡ºæè¿°:
 For each query, output in a line the total number of cars parking on campus.  The last line of output is supposed to give the plate number of the car that has parked for the longest time period, and the corresponding time length.  If such a car is not unique, then output all of their plate numbers in a line in alphabetical order, separated by a space.
 
-ÊäÈëÀı×Ó:
+è¾“å…¥ä¾‹å­:
 16 7
 JH007BD 18:00:01 in
     ZD00001 11:30:08 out
@@ -43,7 +43,7 @@ DB8888A 06:30:50 in
 18:00:00
 23:59:00
 
-Êä³öÀı×Ó:
+è¾“å‡ºä¾‹å­:
 1
 4
 5
@@ -53,6 +53,8 @@ DB8888A 06:30:50 in
 1
 JH007BD ZD00001 07:20:09
 */
+
+//sort of wrong
 
 #include <iostream>
 #include <algorithm>
