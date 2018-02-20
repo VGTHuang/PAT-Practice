@@ -1,27 +1,33 @@
 //PAT 1012, 2018/2/20
 
 /*
-ÌâÄ¿ÃèÊö
-The Japanese language is notorious for its sentence ending particles. Personal preference of such particles can be considered as a reflection of the speaker's personality. Such a preference is called "Kuchiguse" and is often exaggerated artistically in Anime and Manga. For example, the artificial sentence ending particle "nyan~" is often used as a stereotype for characters with a cat-like personality:
+é¢˜ç›®æè¿°
+The Japanese language is notorious for its sentence ending particles. Personal preference of such particles
+can be considered as a reflection of the speaker's personality. Such a preference is called "Kuchiguse" and 
+is often exaggerated artistically in Anime and Manga. For example, the artificial sentence ending particle
+"nyan~" is often used as a stereotype for characters with a cat-like personality:
 Itai nyan~ (It hurts, nyan~)
 Ninjin wa iyada nyan~ (I hate carrots, nyan~)
 
 Now given a few lines spoken by the same character, can you find her Kuchiguse?
 
-ÊäÈëÃèÊö:
-Each input file contains one test case.  For each case, the first line is an integer N (2<=N<=100). Following are N file lines of 0~256 (inclusive) characters in length, each representing a character's spoken line. The spoken lines are case sensitive.
+è¾“å…¥æè¿°:
+Each input file contains one test case.  For each case, the first line is an integer N (2<=N<=100). Following 
+are N file lines of 0~256 (inclusive) characters in length, each representing a character's spoken line.
+The spoken lines are case sensitive.
 
 
-Êä³öÃèÊö:
-For each test case, print in one line the kuchiguse of the character, i.e., the longest common suffix of all N lines. If there is no such suffix, write "nai".
+è¾“å‡ºæè¿°:
+For each test case, print in one line the kuchiguse of the character, i.e., the longest common suffix of 
+all N lines. If there is no such suffix, write "nai".
 
-ÊäÈëÀı×Ó:
+è¾“å…¥ä¾‹å­:
 3
 Itai nyan~
 Ninjin wa iyadanyan~
 uhhh nyan~
 
-Êä³öÀı×Ó:
+è¾“å‡ºä¾‹å­:
 nyan~
 */
 
