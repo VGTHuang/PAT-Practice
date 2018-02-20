@@ -45,7 +45,7 @@ using namespace std;
 
 
 vector<vector<int>> member;
-vector<int> isretailer;
+vector<int> isretailer;    // 1) 0 if this member is not retailer, or retailer has made 0 sales; 2) store the number of products a retailer sells
 vector<int> level;
 
 void GetLevel() {  //use BFS to get supply level of each member
@@ -87,7 +87,6 @@ int main() {
 				member[i].push_back(tempnode);
 			}
 	}
-
 	GetLevel();
 	double sum = 0;
 	for (i = 0; i < N; i++) {
@@ -98,7 +97,6 @@ int main() {
 			}
 		}
 	}
-
 	printf("%.1f", sum);
 
 	return 0;
