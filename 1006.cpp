@@ -2,20 +2,34 @@
 
 /*
 题目描述
-Zhejiang University has 6 campuses and a lot of gates.  From each gate we can collect the in/out times and the plate numbers of the cars crossing the gate.  Now with all the information available, you are supposed to tell, at any specific time point, the number of cars parking on campus, and at the end of the day find the cars that have parked for the longest time period.
+Zhejiang University has 6 campuses and a lot of gates.  From each gate we can collect the in/out times
+and the plate numbers of the cars crossing the gate.  Now with all the information available, you are
+supposed to tell, at any specific time point, the number of cars parking on campus, and at the end of the day
+find the cars that have parked for the longest time period.
 
 输入描述:
-Each input file contains one test case.  Each case starts with two positive integers N (<= 10000), the number of records, and K (<= 80000) the number of queries.  Then N lines follow, each gives a record in the format
+Each input file contains one test case.  Each case starts with two positive integers N (<= 10000), 
+the number of records, and K (<= 80000) the number of queries.  Then N lines follow, each gives a record in the format
 plate_number hh:mm:ss status
-where plate_number is a string of 7 English capital letters or 1-digit numbers; hh:mm:ss represents the time point in a day by hour:minute:second, with the earliest time being 00:00:00 and the latest 23:59:59; and status is either in or out.
-Note that all times will be within a single day. Each "in" record is paired with the chronologically next record for the same car provided it is an "out" record. Any "in" records that are not paired with an "out" record are ignored, as are "out" records not paired with an "in" record. It is guaranteed that at least one car is well paired in the input, and no car is both "in" and "out" at the same moment. Times are recorded using a 24-hour clock.
+where plate_number is a string of 7 English capital letters or 1-digit numbers; 
+hh:mm:ss represents the time point in a day by hour:minute:second, with the earliest time being 00:00:00 
+and the latest 23:59:59; and status is either in or out.
+Note that all times will be within a single day. Each "in" record is paired with the chronologically 
+next record for the same car provided it is an "out" record. Any "in" records that are not paired with
+an "out" record are ignored, as are "out" records not paired with an "in" record. It is guaranteed that
+at least one car is well paired in the input, and no car is both "in" and "out" at the same moment. 
+Times are recorded using a 24-hour clock.
 
 
-Then K lines of queries follow, each gives a time point in the format hh:mm:ss.  Note: the queries are given in ascending order of the times.
+Then K lines of queries follow, each gives a time point in the format hh:mm:ss.  Note: the queries 
+are given in ascending order of the times.
 
 
 输出描述:
-For each query, output in a line the total number of cars parking on campus.  The last line of output is supposed to give the plate number of the car that has parked for the longest time period, and the corresponding time length.  If such a car is not unique, then output all of their plate numbers in a line in alphabetical order, separated by a space.
+For each query, output in a line the total number of cars parking on campus.  The last line of output 
+is supposed to give the plate number of the car that has parked for the longest time period, and the 
+corresponding time length.  If such a car is not unique, then output all of their plate numbers in a 
+line in alphabetical order, separated by a space.
 
 输入例子:
 16 7
