@@ -1,10 +1,10 @@
 //PAT 1017, 2018/2/27
 
 /*
-ÌâÄ¿ÃèÊö
+é¢˜ç›®æè¿°
 Stack is one of the most fundamental data structures, which is based on the principle of Last In First Out (LIFO).  The basic operations include Push (inserting an element onto the top position) and Pop (deleting the top element).  Now you are supposed to implement a stack with an extra operation: PeekMedian -- return the median value of all the elements in the stack.  With N elements, the median value is defined to be the (N/2)-th smallest element if N is even, or ((N+1)/2)-th if N is odd.
 
-ÊäÈëÃèÊö:
+è¾“å…¥æè¿°:
 Each input file contains one test case.  For each case, the first line contains a positive integer N (<= 105).  Then N lines follow, each contains a command in one of the following 3 formats:
 
 Push key
@@ -14,10 +14,10 @@ PeekMedian
 where key is a positive integer no more than 105.
 
 
-Êä³öÃèÊö:
+è¾“å‡ºæè¿°:
 For each Push command, insert key into the stack and output nothing.  For each Pop or PeekMedian command, print in a line the corresponding returned value.  If the command is invalid, print "Invalid" instead.
 
-ÊäÈëÀı×Ó:
+è¾“å…¥ä¾‹å­:
 17
 Pop
 PeekMedian
@@ -37,7 +37,7 @@ Pop
 Pop
 Pop
 
-Êä³öÀı×Ó:
+è¾“å‡ºä¾‹å­:
 Invalid
 Invalid
 3
@@ -51,6 +51,8 @@ Invalid
 3
 Invalid
 */
+
+//sort of wrong, timeout (inefficient peekmedian)
 
 #include <iostream>
 #include <string>
