@@ -108,8 +108,6 @@ void executPeekMedian() {
 	return;
 }
 
-
-
 void executeCmd() {
 	for (int i = 0; i < N; i++) {
 		if (cmd[i].compare("PeekMedian") == 0)
