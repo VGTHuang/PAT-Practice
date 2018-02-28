@@ -137,6 +137,5 @@ int main() {
 			cout << ranked[i].rank << ' ';
 		cout << ranked[ranked.size() - 1].rank;
 
-
 	return 0;
 }
